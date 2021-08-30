@@ -23,13 +23,13 @@ weight = float(input("enter your weight in kg: "))
 bodymass_index = round(weight // height**2)
 
 print(f"Your Body Mass Index is {bodymass_index}")
-if bodymass_index <= 18.5:
-    print("According to your Body Mass Index (BMI), you are **overweight**.")
-elif bodymass_index > 18.5 and bodymass_index < 25:
-    print("According to your Body Mass Index (BMI), you have **normal weight**.")
-elif bodymass_index > 25 and bodymass_index < 30:
-    print("According to your Body Mass Index (BMI), you are **slightly overweight**.")
-elif bodymass_index > 30 and bodymass_index < 35:
-    print("According to your Body Mass Index (BMI), you are **obese**.")
+if bodymass_index < 18.5:
+    print(f"Your Body Mass Index (BMI) is {bodymass_index}. You are underweight.")
+elif bodymass_index < 25:
+    print(f"Your Body Mass Index (BMI) is {bodymass_index}. You have normal weight.")
+elif bodymass_index < 30:
+    print(f"Your Body Mass Index (BMI) is {bodymass_index}. You are slightly overweight.")
+elif bodymass_index < 35:
+    print(f"Your Body Mass Index (BMI) is {bodymass_index}. You are obese.")
 else:
-    print("According to your Body Mass Index (BMI), you are **clinically obese**.")
+    print(f"Your Body Mass Index (BMI) is {bodymass_index}. You are clinically obese.")
