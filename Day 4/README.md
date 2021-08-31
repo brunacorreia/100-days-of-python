@@ -11,5 +11,5 @@ Randomization and Python Lists
     - ``random.choice()`` -> Returns a randomly selected element from the specified sequence
 
 ### References
-https://docs.python.org/3/library/random.html
+Module Random - https://docs.python.org/3/library/random.html
 Data Structures - https://docs.python.org/3/tutorial/datastructures.html
