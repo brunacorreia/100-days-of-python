@@ -5,10 +5,30 @@ print(computer_guess)
 player1 = input("Your time. Type '1' for ROCK, '2' for PAPER or '3' for SCISSORS.")
 
 
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
 '''
-rock = 1
-paper = 2
-scissors = 3
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
 '''
 
 
@@ -17,30 +37,39 @@ def start_game():
     computer_score = 0
     if player1 == "1":
         if computer_guess == 1:
+            print("Your guess: " + rock + "\n" + "Computer guess: " + rock)
             print("The computer has chosen ROCK. It's a draw.")
         elif computer_guess == 2:
+            print("Your guess: " + rock + "\n" + "Computer guess: " + paper)
             print("The computer has chosen PAPER. You loose! :(")
             computer_score += 1
         elif computer_score == 3:
+            print("Your guess: " + rock + "\n" + "Computer guess: " + scissors)
             print("YOU WIN.")
             your_score += 1
     elif player1 == "2":
         if computer_guess == 2:
+            print("Your guess: " + paper + "\n" + "Computer guess: " + paper)
             print("The computer has chosen PAPER. It's a draw.")
         elif computer_guess == 3:
+            print("Your guess: " + paper + "\n" + "Computer guess: " + scissors)
             print("The computer has chosen SCISSORS. You loose! :(")
             computer_score += 1
-        elif computer_score == 3:
+        elif computer_score == 1:
+            print("Your guess: " + paper + "\n" + "Computer guess: " + rock)
             print('YOU WIN.')
             your_score += 1
     elif player1 == "3":
         if computer_guess == 3:
+            print("Your guess: " + scissors + "\n" + "Computer guess: " + scissors)
             print("The computer has chosen SCISSORS. It's a draw.")
         elif computer_guess == 1:
-            print("The computer has chosen PAPER. You loose! :( ")
+            print("Your guess: " + scissors + "\n" + "Computer guess: " + rock)
+            print("The computer has chosen ROCK. You loose! :( ")
             computer_score += 1
             return computer_score
         elif computer_guess == 2:
+            print("Your guess: " + scissors + "\n" + "Computer guess: " + paper)
             print('YOU WIN.')
             your_score += 1
             return your_score
