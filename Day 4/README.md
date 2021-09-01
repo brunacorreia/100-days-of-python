@@ -3,7 +3,6 @@ Randomization and Python Lists
 
 ## Content
 ### Nested Lists
-
 ### Methods
 - ``len()``
 - random module:
