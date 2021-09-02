@@ -4,6 +4,8 @@
 ### Day 3 (29/08/2021) - Control Flow and Logical Operators
 ### Day 4 (30/08/2021) - Randomization and Python Lists
 ### Day 5 (31/08/2021) - Python Loops
+### Day 6 (01/09/2021) - Python Function and Karel
+### Day 7 (02/09/2021) - Hangman
 ## References
 - Python IDE: https://thonny.org/
 - Python Tutor: https://pythontutor.com/
