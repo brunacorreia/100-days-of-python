@@ -16,3 +16,9 @@
 | classmethod() | getattr() | locals() | repr() | zip() |
 | compile() | globals() | map() | reversed() | __import__() |
 | complex() | hasattr() | max() | round() |  |
+
+### Defining a Function
+def function():
+
+### Calling the Function
+function()

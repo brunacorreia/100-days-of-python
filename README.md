@@ -7,5 +7,6 @@
 ### Day 6 (01/09/2021) - Python Function and Karel
 ### Day 7 (02/09/2021) - Hangman
 ## References
-- Python IDE: https://thonny.org/
-- Python Tutor: https://pythontutor.com/
+- <a href="https://thonny.org/">Python IDE</a>
+- <a href="https://pythontutor.com/">Python Tutor</a>
+- <a href="https://www.python.org/dev/peps/pep-0008/">Style Guide for Python Code</a>
