@@ -1,5 +1,19 @@
 ## <a href="https://docs.python.org/3/library/functions.html">Built in Functions</a>
 
+## Contents
+- Defining a Function
+    - def function():
+- Calling the Function created
+    - function()
+- While loops
+    - while something_is_true:
+        # Do something repeatedly
+        # Then do this
+
+
+
+
+
 |  |  | Built-in Functions |  |  |
 |:---:|:---:|:---:|:---:|:---:|
 | abs() | delattr() | hash() | memoryview() | set() |
@@ -17,8 +31,3 @@
 | compile() | globals() | map() | reversed() | __import__() |
 | complex() | hasattr() | max() | round() |  |
 
-### Defining a Function
-def function():
-
-### Calling the Function
-function()
