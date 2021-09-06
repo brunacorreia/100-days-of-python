@@ -33,7 +33,7 @@ while '_' in display:
     
     # once the lives is 0 we lose and exit
     if lives == 0:
-        print(f"You lose. The Python Method was {word}. Try again later.")
+        print(f"You lose. The Python Method was '{word}'. Try again later.")
         break
 
     # print at each correct stage, join the elements into a string separated by spaces
