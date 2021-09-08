@@ -2,7 +2,6 @@
 You are painting a wall. The instructions on the paint can says that 1 can of paint can cover 5 square meters of wall. 
 Given a random height and width of wall, calculate how many cans of paint you'll need to buy.
 '''
-
 import math
 
 print("Welcome to the WALL PAINTING CALCULATOR.\n")
@@ -11,8 +10,6 @@ coats_number = float(input("Number of Coats: "))
 wall_height = float(input("Wall Height: "))
 wall_width = float(input("Wall Width: "))
 total_area = 0
-
-
 sum_walls = True
 
 while sum_walls == True:
@@ -22,7 +19,6 @@ while sum_walls == True:
     return wall_area
   wall_area = area_calc()
   total_area += wall_area
-
   add_wall = input("Is there any other wall you'd like to paint? Y/N\n").lower()
 
   if add_wall == "y":
@@ -36,8 +32,6 @@ while sum_walls == True:
     cans = math.ceil(total_area / paint_coverage)
     print(f"You will need {cans} cans of paint.")
     break
-
-
 
 '''
 def paint_calc(height, width, cover):
