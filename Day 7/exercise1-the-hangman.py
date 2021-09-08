@@ -17,12 +17,13 @@ for letter in word:
 
 while '_' in display:
     guess = input("Guess a letter to save the hangman: \n").lower()
+    if guess in display:
+        print(f"You've already guessed the letter {guess}.")
 
 # to complete the blank spaces if the letter chosen by the user matches the word        
     for index, letter in enumerate(word):
         if letter == guess:
             display[index] = guess
-
 # if chosen letter is not in word, chances are reduced and hangman is updated 
     if not guess in word:
         lives -= 1
