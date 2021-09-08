@@ -6,10 +6,12 @@ Given a random height and width of wall, calculate how many cans of paint you'll
 import math
 
 print("Welcome to the WALL PAINTING CALCULATOR.\n")
-paint_coverage = float(input("Paint coverage [m²/l]: "))
-wall_height = float(input("Height: "))
-wall_width = float(input("Width: "))
+paint_coverage = float(input("Paint coverage [m²/coat]: "))
+coats_number = float(input("Number of Coats: "))
+wall_height = float(input("Wall Height: "))
+wall_width = float(input("Wall Width: "))
 total_area = 0
+
 
 sum_walls = True
 
@@ -24,12 +26,13 @@ while sum_walls == True:
   add_wall = input("Is there any other wall you'd like to paint? Y/N\n").lower()
 
   if add_wall == "y":
-    wall_height = float(input("Height: "))
-    wall_width = float(input("Width: "))
+    wall_height = float(input("Wall Height: "))
+    wall_width = float(input("Wall Width: "))
     area_calc()
   else:
     sum_walls == False
     print(f"Your total area is: {total_area} m².")
+    paint_coverage = paint_coverage / coats_number
     cans = math.ceil(total_area / paint_coverage)
     print(f"You will need {cans} cans of paint.")
     break
